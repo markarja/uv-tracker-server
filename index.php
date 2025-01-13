@@ -143,8 +143,7 @@
 				
 				if($result == "") {
 					
-					//$url = "http://api.worldweatheronline.com/free/v2/weather.ashx?q=" . $_GET['q'] . "&format=json&num_of_days=1&key=9ece06a86ec543378da55986ca895";
-                    $url = "http://api.worldweatheronline.com/premium/v1/weather.ashx?q=" . $_GET['q'] . "&format=json&num_of_days=1&key=31fc2b7c0eaf4f62ab7124633170206";
+                    $url = "http://api.worldweatheronline.com/premium/v1/weather.ashx?q=" . $_GET['q'] . "&format=json&num_of_days=1&key=YYYYY";
 					$json = file_get_contents($url);
 					$obj = json_decode($json);
 					$source = 'World Weather Online';
@@ -159,8 +158,7 @@
 				
 			} else {
 			
-				//$url = "http://api.worldweatheronline.com/free/v2/weather.ashx?q=" . $_GET['q'] . "&format=json&num_of_days=1&key=9ece06a86ec543378da55986ca895";
-                $url = "http://api.worldweatheronline.com/premium/v1/weather.ashx?q=" . $_GET['q'] . "&format=json&num_of_days=1&key=31fc2b7c0eaf4f62ab7124633170206";
+                $url = "http://api.worldweatheronline.com/premium/v1/weather.ashx?q=" . $_GET['q'] . "&format=json&num_of_days=1&key=YYYYY";
 				$json = file_get_contents($url);
 				$obj = json_decode($json);
 				$source = 'World Weather Online';
@@ -173,7 +171,7 @@
 				
 			}
 			
-			$url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=" . $_GET['q'] . "&result_type=locality&key=AIzaSyD8NMfNB4munfbFVU_cUoZU8FLK-nUQWg0";
+			$url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=" . $_GET['q'] . "&result_type=locality&key=ZZZZ";
 			$json = file_get_contents($url);
 			$obj = json_decode($json);
 			
