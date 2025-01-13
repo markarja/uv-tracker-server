@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>UV radiaiton now analytics</title>
+		<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <link href="https://fonts.googleapis.com/css?family=Raleway:400,100" rel="stylesheet" type="text/css">
+	    <script src="http://code.jquery.com/jquery-1.7.0.min.js"></script>	   
+	    <script src="jquery.animateNumber.min.js"></script> 
+	    <link rel="stylesheet" href="style.css" type="text/css">
+	    <link rel="stylesheet" href="../font-awesome-4.3.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="title">UV radiation now - Analytics</div>
+		<br />
+		<div class="data">
+			<span id="requests">0</span>			
+		</div>
+		<div class="type">
+			requests
+		</div>
+		<br />	
+		<div class="data">
+			<span class="red" id="requeststoday">0</span> / 1000
+		</div>
+		<div class="type">
+			requests today
+		</div>
+		<br />
+	    <div class="data green"> 
+	    	<i class="fa fa-caret-up"></i> <span id="percent">0</span> %
+	    </div>
+	    <div class="type">
+	    	from yesterday
+	    </div>
+	    <br />
+	    <div class="data">
+	    	<span id="max">0</span>
+	    </div>
+	    <div class="type"> 
+	    	Max UV index today
+	    </div>
+		<script>
+	    	$("#requests").animateNumber({ number: 17900 }, 5000);
+	    	setTimeout(function() {
+	    		$("#requeststoday").animateNumber({ number: 150 }, 5000);
+	    	}, 300);
+	    	setTimeout(function() {
+	    		$("#percent").animateNumber({ number: 10 }, 5000);
+	    	}, 600);
+	    	setTimeout(function() {
+	    		$("#max").animateNumber({ number: 15 }, 5000);
+	    	}, 900);
+	    </script>
+	</body>
+</html>

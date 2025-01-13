@@ -1,0 +1,30 @@
+body {
+	font-family: 'Raleway', sans-serif;
+	-ms-touch-action: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+  	-webkit-tap-highlight-color: transparent;
+  	text-align: center;	
+  	font-size: 30px;
+}
+
+.title {
+	font-size: 20px;
+	font-weight: bold;	
+}
+
+.data {
+	font-weight: bold;	
+}
+
+.type {
+	color: rgb(100,100,100);
+	font-size: 20px;	
+}
+
+.red {
+	color: rgb(230,0,0);	
+}
+
+.green {
+	color: rgb(0,200,0);	
+}
