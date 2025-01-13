@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UV radiation now global downloads</title>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script>
+            function load() {
+                google.charts.load('current', {
+                    'packages':['geochart'],
+                    'mapsApiKey': 'AIzaSyD8NMfNB4munfbFVU_cUoZU8FLK-nUQWg0'
+                });
+                google.charts.setOnLoadCallback(drawRegionsMap);
+            }
+
+            function drawRegionsMap() {
+                var data = google.visualization.arrayToDataTable(
+                    [['Country', '% of all downloads'],['Bangladesh',0.13],
+                     ['Belgium',0.71],['Burkina Faso',0.01],['Bulgaria',0.22],['Bosnia and Herzegovina',0.05],['Brunei',0.01],['Bolivia',0.22],['Bahrain',0.02],['Burundi',0.01],['Bhutan',0.01],['Jamaica',0],['Botswana',0.01],['Brazil',2.56],['Belarus',0.05],['Russia',1.11],['Serbia',0.22],['Reunion',0.05],['Turkmenistan',0.01],['Romania',2.21],['Guatemala',0.14],['Greece',0.83],['Guadeloupe',0.02],['Japan',1.82],['Georgia',0.06],['United Kingdom',2.09],['El Salvador',0.08],['Gambia',0.01],['Ghana',0.04],['Oman',0.06],['Tunisia',0.02],['Jordan',0.02],['Unknown',0.12],['Croatia',0.22],['Hungary',0.72],['Hong Kong',0.44],['Honduras',0.05],['Venezuela',0.08],['Puerto Rico',0.02],['Portugal',0.59],['Paraguay',0.06],['Iraq',0.07],['Panama',0.3],['Peru',1.91],['Pakistan',0.15],['Philippines',0.25],['Poland',0.59],['Zambia',0.01],['Estonia',0.24],['Egypt',0.08],['South Africa',0.22],['Ecuador',1.67],['Italy',1.61],['Vietnam',0.6],['Saudi Arabia',0.21],['Spain',2.95],['Moldova',0.02],['Morocco',0.08],['Uzbekistan',0.01],['Myanmar',0.07],['Mali',0.02],['Macau',0.01],['Macedonia',0.17],['Mauritius',0.01],['Malta',0.02],['Maldives',0],['Martinique',0],['Mauritania',0.01],['Tanzania',0.01],['Malaysia',0.43],['Mexico',1.35],['Israel',0.58],['France',1.35],['Finland',3.13],['Nicaragua',0.06],['Netherlands',1.72],['Norway',0.39],['Namibia',0.01],['New Caledonia',0],['Nigeria',0.06],['New Zealand',0.56],['Nepal',0.04],['Cote DIvoire (Ivory Coast)',0.01],['Switzerland',0.33],['Colombia',0.64],['China',27.86],['Chile',1.17],['Canada',0.87],['Czech Republic',0.33],['Cyprus',0.07],['Costa Rica',0.14],['Cuba',0.02],['Kenya',0.04],['Cambodia',0.05],['Slovakia',0.18],['South Korea',0.39],['Slovenia',0.21],['Kuwait',0.13],['Kazakhstan',0.11],['Singapore',0.59],['Sweden',2.42],['Sudan',0.01],['Dominican Republic',0.04],['Denmark',0.47],['Germany',3.65],['Algeria',0.25],['United States',9.2],['Uruguay',0.05],['Lebanon',0.08],['Laos',0.01],['Taiwan',0.31],['Trinidad and Tobago',0.01],['Turkey',0.79],['Sri Lanka',0.11],['Latvia',0.05],['Lithuania',0.18],['Luxembourg',0.04],['Thailand',1.36],['Libya',0.02],['United Arab Emirates',0.21],['Afghanistan',0.01],['Iceland',0.01],['Iran',0.28],['Armenia',0.05],['Albania',0.06],['Angola',0.04],['Argentina',1.07],['Australia',5.76],['Austria',0.31],['Aruba',0.01],['India',2.76],['Aland Islands',0.01],['Azerbaijan',0.05],['Ireland',0.13],['Indonesia',0.74],['Ukraine',0.18],['Qatar',0.02],['',0]]
+                );
+
+                var options = {
+                    backgroundColor: {fill:'#80ccff'},
+                    colorAxis: {colors: ['yellow','red'],maxValue:100,minValue:0}
+                };
+
+                var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+                chart.draw(data, options);
+            }
+        </script>
+    </head>
+    <body onload="load();">
+        <div id="regions_div" style="width: 100%; height: 100%;"></div>
+    </body>
+</html>
