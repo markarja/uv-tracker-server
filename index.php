@@ -30,7 +30,7 @@
 		"Sodankyla Lapin ilmatieteellinen tutkimuskeskus" => array("67.36663", "26.62901", 1)
 	);
 	
-	define("APIKEY", "dXYtdHJhY2tlci1pZA==");
+	define("APIKEY", "xxxxxxx");
 	$endtime = "";
 	
 	if(isset($_GET['apikey']) && $_GET['apikey'] == APIKEY) {
@@ -261,7 +261,7 @@
 	
 	function fmiDataAsJson($start_time, $end_time) {
 		$urlprefix = "http://data.fmi.fi/fmi-apikey/";
-		$apikey = "49a0f22e-b58d-44f3-9e9d-65a49d9dca99";
+		$apikey = "xxx";
 		$urlsuffix = "/wfs?";
 		$request = "request=getFeature";
 		$storedquery = "&storedquery_id=fmi::observations::radiation::timevaluepair";
