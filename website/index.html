@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>UV radiation now</title>
+		<link href='https://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+		<meta name="viewport" content="width=device-width, height=device-height" />
+		<link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css">
+		<meta property="og:title" content="UV radiation now" />
+		<meta property="og:type" content="app" />
+		<meta property="og:image" content="https://uvradiationnow.markuskarjalainen.com/logo.png" />
+		<meta property="og:url" content="https://uvradiationnow.markuskarjalainen.com" />
+		<meta property="og:description" content="UV radiation now" />
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<div class="logo">
+			<img src="logo.png" />
+		</div>
+		<div class="header">
+			Enjoy the sun safely with <br />the <b>UV radiation now</b> app
+		</div>		 		
+		<table class="phone-container">
+			<tr>
+				<td class="download-button">
+					<input type="radio" id="free" name="version" value="free" checked="checked"> Free
+  					<input type="radio" id="premium" name="version" value="premium"> Premium<br>
+					<button class="download-button" onclick="download();"><i class="fa fa-cloud-download"></i>&nbsp;download</button>
+				</td>
+				<td>
+					&nbsp;
+				</td>
+			</tr>
+		</table>
+		<div class="features">
+			<p>
+				Global UV data 
+			</p>
+			<p>
+				Share UV alert feature
+			</p>			
+			<p>
+				Minimalistic UI design
+			</p>	
+			<p>
+				Available for iOS, Android and Windows.
+			</p>
+		</div>
+		<div class="tweets">
+			<a class="twitter-timeline" href="https://twitter.com/uv_now" data-widget-id="668180690022834176">Tweets by @uv_now</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div>
+		<div class="buttons"> 
+			<p>Spread the word:</p> 
+			<button class="appstore-button" onclick="window.location = 'https://www.facebook.com/sharer/sharer.php?u=http://uvradiationnow.markuskarjalainen.com'"><i class="fa fa-facebook appstore-logo"></i> Facebook</button>
+			<button class="appstore-button" onclick="window.location = 'https://twitter.com/share?url=http://uvradiationnow.markuskarjalainen.com'"><i class="fa fa-twitter appstore-logo"></i> Twitter</button>
+			<button class="appstore-button" onclick="window.location = 'https://www.linkedin.com/shareArticle?url=http://uvradiationnow.markuskarjalainen.com'"><i class="fa fa-linkedin appstore-logo"></i> LinkedIn</button>		
+			<p>Questions?</p> 
+			<button class="appstore-button" onclick="window.location = 'mailto:info@markuskarjalainen.com?subject=UV radiation now'"><i class="fa fa-envelope appstore-logo"></i> Get in touch</button>	
+		</div>
+		<script>
+			$(document).ready(function() {
+			  $('select').niceSelect();
+			});
+		</script>	
+	</body>
+</html>
